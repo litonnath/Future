@@ -16,7 +16,7 @@ class splash(scrapy.Spider):
         return SplashFormRequest.from_response(response,url='https://search.ipindia.gov.in/DesignApplicationStatus/',formdata={'APPLICATION_NUMBER':'222230','CaptchaText':'hijdjs'},clickdata={'name':'submit'},callback=self.parse)
 
 
-        #Below for without js form
+        #Below for without splash
         # return FormRequest.from_response(response,formdata={'APPLICATION_NUMBER':'222230','CaptchaText':'hijdjs'},clickdata={'name':'submit'},callback=self.parse)
 
 
